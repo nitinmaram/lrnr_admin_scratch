@@ -1,0 +1,38 @@
+.todo-item {
+  border-bottom: 1px solid #eee;
+
+  button {
+    display: none;
+    margin-top: 8px;
+  }
+
+  &:hover {
+    background: rgb(254, 254, 244);
+
+    button {
+      display: inline-block;
+    }
+  }
+}
+
+  div.ui.icon.input {
+    width: 100%;
+    #simSearch{
+      width:100%;
+    }
+  }
+
+@media (max-width: $screen-xs-max) {
+  .todo-item {
+    .text-right {
+      display: none;
+    }
+  }
+  .todo-item:hover {
+    .text-right {
+      display: block;
+      text-align: center;
+      margin-bottom: 12.5px;
+    }
+  }
+}
